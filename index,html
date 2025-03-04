@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダム音声プレイヤー</title>
+</head>
+<body>
+    <h1>ランダムに音声を再生中...</h1>
+    <script>
+        const audioFiles = [
+            "audio/きらきら輝く1.mp3",
+            "audio/弓矢を放つ.mp3",
+            "audio/毒魔法2.mp3"
+        ];
+        const randomFile = audioFiles[Math.floor(Math.random() * audioFiles.length)];
+        window.location.href = randomFile; // ランダムな音声ファイルにリダイレクト
+    </script>
+</body>
+</html>
